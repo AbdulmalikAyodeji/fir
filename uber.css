@@ -158,10 +158,10 @@ input {
     padding-top: 25px;
 }
 #any{
-    border-radius: 50px;
-    background-color: yellowgreen;
+    border-radius: 80px;
+    background-color: white;
     font-size: 50px;
-    margin-left: 1200px;
+    margin-left: 1250px;
     position: sticky;
     bottom: 10rem;
 }

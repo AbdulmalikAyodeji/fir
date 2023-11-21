@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+        table {
+        border: 2px solid;
+        text-align: center;
+        margin-left: 30%;
+        margin-bottom: 8%;
+        margin-top: 4%;
+    }
+    td {
+    
+        padding: 20px;
+        box-shadow: inset 1px 1px 1px black;
+    }
+    .btn {
+        background-color: red;
+    }
+
+    .da {
+        margin: 10px;
+    }
+
+    .god {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .tal {
+        text-decoration: underline red 10px;
+        text-underline-offset: 10px;
+    }
+
+    .lol {
+        font-weight: bolder;
+        font-size: 20%;
+    }
+
+    .koll  {
+        display: flex;
+        list-style-type: none;
+        margin: 40px;
+        color: black;
+        font-size: 20px;
+        margin-left: 9%;
+    }
+    .koll a{
+        color: black;
+        text-decoration: none;
+        margin: 30px;
+    }
+    .kol  {
+        display: flex;
+        list-style-type: none;
+        color: black;
+        margin-top: 1%;
+        margin-left: 20%;
+   
+    }
+    .kol a{
+        color: black;
+        margin: 20px;
+        font-size: 70%;
+    }
+
+   
+
+    .pl {
+        display: none;
+    }
+
+    #dow {
+        background-color: red;
+        border: none;
+        width: 20%;
+        height: 10vh;
+        color: white;
+        margin-top: 1%;
+        display: none;
+    }
+
+    .down {
+        background-color: red;
+        border: none;
+        width: 20%;
+        height: 10vh;
+        color: white;
+        margin-top: 1%;
+    }
+
+    #SECOND {
+        margin-top: 5%;
+    }
+
+    #third {
+        margin-top: 5%;
+    }
+
+    #fourth {
+        margin-top: 5%;
+    }
+    #man{
+        position: sticky;
+        top: 0px;
+        z-index:3;
+    }
+    #dadd{
+        position: sticky;
+        top: 8%;
+        z-index:3;
+        background-color:rgb(254, 254, 254);
+    }
+    .rel{
+     background-color: red;
+     border: none;  
+     margin-left: 48%; 
+     margin-top: 1%;
+    }
+    .flip{
+        margin-left: 45%;
+        list-style-type: none;
+    }
+    #sam{
+        border: none;
+        background-color: red;
+        width: 20%;
+        height: 10vh;
+        color: white;
+        margin-top: 1%;
+        display: none;
+    }
+    i{
+        margin: 6%;
+        font-size: 20px;
+    }
+
+
+    @media screen and (max-width:768px) {
+        .da {
+            display: none;
+        }
+        .rel{
+            display: none;
+        }
+
+        li {
+            margin: 5px;
+        }
+
+        #btn {
+            display: none;
+        }
+        .koll{
+            display: none;
+        }
+
+        #sec {
+            width:400px;
+            margin-left: 8%;
+        }
+
+        #fli {
+            display: none;
+        }
+
+        #tat {
+            overflow-x: hidden;
+        }
+
+        .god {
+            margin-left: -20%;
+        }
+
+        #dad {
+            margin-left: -170px;
+            font-size: 30px;
+        }
+        .kol li a{
+            margin: 10%;
+        }
+        #first {
+            display: none;
+        }
+
+        #SECOND {
+            display: none;
+        }
+
+        #third {
+            display: none;
+        }
+
+        #fourth {
+            display: none;
+        }
+        .kol{
+            margin-left: 20%;
+        }
+        .god{
+            margin-left: 10%;
+        }
+        .down{
+            width: 50%;
+            height: 7vh;
+        }
+        .store{
+            margin-top: 7%;
+        }
+      
+    }
+</style>
+
+<body>
+    <div id="tat">
+        <nav class="navbar bg-body-tertiary" id="man">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="fli">Flipboard</a>
+                <form class="d-flex" role="search">
+                    <p class="da">Newsletter</p>
+                    <input class="form-control me-2" type="search" placeholder="Search" id="sec">
+                    <button class="btn" type="submit" id="btn">Search</button>
+                    <p class="da">Login</p>
+                </form>
+            </div>
+        </nav>
+        <h4 class="pl">Flipboard</h4>
+
+        <div class="god">
+            <div class="lol">
+                <b>
+                    <h1 style="font-weight: bolder; margin-top: 5%;">GET INFORMED</h1>
+                </b>
+                <h1 class="tal" style="font-weight: bolder;">GET INSPIRED</h1>
+            </div>
+
+            <h4 style="margin-top: 2%;" class="store">Stories Curated For You</h4>
+            <button id="sam">Download
+                the app
+            </button>
+            <button class="down">Sign up
+            </button>
+        </div>
+        <div id="dadd">
+            <ul class="koll">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Entairtement</a></li>
+                <li><a href="#">Techonology</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Flipboard tv</a></li>
+            </ul>
+        </div>  
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="first">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/ap.png" style="width: 10%;">
+                        <img src="img/colora.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title">1 day ago</p>
+                            <h6 class="card-text">Colorado judge finds Trump engaged in insurrection, but rejects
+                                constitutional ballot challenge</h6>
+                                <p>bbc.co.uk - By Nick Beake</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/ax.png" style="width: 10%;">
+                        <img src="img/soilder.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title">
+                                15 hours ago</p>
+                            <h6 class="card-text">
+                                Texas woman is convicted and faces up to life in prison for killing pro cyclist</h6>
+                                <p>ABC News - M.L. Nestel</p>
+                        </div>  
+                        <div class="card-footer" id="gob">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/npr.png" style="width: 9%;">
+                        <img src="img/donald trump.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title">2 days ago</p>
+                            <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</h6>
+                                <p>USA TODAY - Marina Pitofsky</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECOND LINE -->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4 " id="SECOND">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/earth.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title">7 days ago</p>
+                            <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</h6>
+                                <p>Axios - Andrew Freedman</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/carter.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title"> 7 hours ago</p>
+                            <h6 class="card-text">Sacha Baron Cohen, Debra Messing, Amy Schumer and other Jewish
+                                celebrities
+                                call out ‘the biggest antisemitic movement since the Nazis’ in</h6>
+                                <p>TIME - By Kathy Ehrich Dowd</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/cars.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title"> 5 hours ago</p>
+                            <h6 class="card-text">Hundreds leave Gaza's al-Shifa hospital as many feared killed at UN
+                                shelter</h6>
+                                <p>NPR - Juliana Kim</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- third line -->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="third">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/earth.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title">7 hours ago</p>
+                            <h6 class="card-text">Texas hiker found over a week after going missing</h6>
+                                <p>bbc.co.uk - By Michelle Roberts</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/woman.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title">15 days ago</p>
+                            <h6 class="card-text">University of Wisconsin—Madison condemns neo-Nazi march in the city
+                            </h6>
+                            <p>CBS News - By Anderson Cooper</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/beast.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title"> 2 days ago</p>
+                            <h6 class="card-text">University of Wisconsin—Madison condemns neo-Nazi march in the city
+                            </h6>
+                            <p>The Daily Beast - Chaya Tong</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fourth line -->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="fourth">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/pastor.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title"> 1 years ago</p>
+                            <h6 class="card-text">With tears and a lullaby, a rural Alabama hospital stops delivering
+                                babies
+                            </h6>
+                            <p>USA TODAY - Eduardo Cuevas</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/redman.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title"> 1 minute ago</p>
+                            <h6 class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</h6>
+                                <p>forward.com - Lauren Markoe</p>
+                
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/thinkingman.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <div class="card-body">
+                            <p class="card-title"> 15 days ago </p>
+                            <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</h6>
+                                <p>Axios - Zachary Basu</p>
+                        </div>
+                        <div class="card-footer">
+                                <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-comment-dots"></i>56
+                            <i class="fa-solid fa-plus"></i>24
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="rel" >Read more</button>
+
+
+         <div id="dad">
+            <ul class="kol">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Publishers</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Stiemap</a></li>
+            </ul><br>
+            <li class="flip"><a href="#"></a>@2023 Flipboard</li>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
