@@ -13,18 +13,20 @@
         crossorigin="anonymous"></script>
 </head>
 <style>
-        table {
+    table {
         border: 2px solid;
         text-align: center;
         margin-left: 30%;
         margin-bottom: 8%;
         margin-top: 4%;
     }
+
     td {
-    
+
         padding: 20px;
         box-shadow: inset 1px 1px 1px black;
     }
+
     .btn {
         background-color: red;
     }
@@ -48,7 +50,7 @@
         font-size: 20%;
     }
 
-    .koll  {
+    .koll {
         display: flex;
         list-style-type: none;
         margin: 40px;
@@ -56,26 +58,29 @@
         font-size: 20px;
         margin-left: 9%;
     }
-    .koll a{
+
+    .koll a {
         color: black;
         text-decoration: none;
         margin: 30px;
     }
-    .kol  {
+
+    .kol {
         display: flex;
         list-style-type: none;
         color: black;
         margin-top: 1%;
-        margin-left: 20%;
-   
+        margin-left: 24%;
+
     }
-    .kol a{
+
+    .kol a {
         color: black;
-        margin: 20px;
+        margin: 10px;
         font-size: 70%;
     }
 
-   
+
 
     .pl {
         display: none;
@@ -111,28 +116,33 @@
     #fourth {
         margin-top: 5%;
     }
-    #man{
+
+    #man {
         position: sticky;
         top: 0px;
-        z-index:3;
+        z-index: 3;
     }
-    #dadd{
+
+    #dadd {
         position: sticky;
         top: 8%;
-        z-index:3;
-        background-color:rgb(254, 254, 254);
+        z-index: 3;
+        background-color: rgb(254, 254, 254);
     }
-    .rel{
-     background-color: red;
-     border: none;  
-     margin-left: 48%; 
-     margin-top: 1%;
+
+    .rel {
+        background-color: red;
+        border: none;
+        margin-left: 48%;
+        margin-top: 1%;
     }
-    .flip{
+
+    .flip {
         margin-left: 45%;
         list-style-type: none;
     }
-    #sam{
+
+    #sam {
         border: none;
         background-color: red;
         width: 20%;
@@ -141,9 +151,18 @@
         margin-top: 1%;
         display: none;
     }
-    i{
+
+    i {
         margin: 6%;
         font-size: 20px;
+    }
+
+    .up {
+        font-weight: 0;
+        font-size: 0%;
+    }
+    #pag{
+        margin-left: 10%;
     }
 
 
@@ -151,7 +170,8 @@
         .da {
             display: none;
         }
-        .rel{
+
+        .rel {
             display: none;
         }
 
@@ -162,17 +182,19 @@
         #btn {
             display: none;
         }
-        .koll{
+
+        .koll {
             display: none;
         }
 
         #sec {
-            width:400px;
+            width: 400px;
             margin-left: 8%;
         }
 
         #fli {
             display: none;
+
         }
 
         #tat {
@@ -181,15 +203,18 @@
 
         .god {
             margin-left: -20%;
+            margin-top: 20%;
         }
 
         #dad {
             margin-left: -170px;
             font-size: 30px;
         }
-        .kol li a{
+
+        .kol li a {
             margin: 10%;
         }
+
         #first {
             display: none;
         }
@@ -205,20 +230,33 @@
         #fourth {
             display: none;
         }
-        .kol{
+
+        .kol {
             margin-left: 20%;
+            font-size: 65%;
+            margin-top: 50%;
         }
-        .god{
+
+        .god {
             margin-left: 10%;
         }
-        .down{
+
+        .down {
             width: 50%;
             height: 7vh;
         }
-        .store{
-            margin-top: 7%;
+
+        .flip {
+            font-size: 60%;
+            margin-top: 0%;
+            margin-bottom: 5%;
         }
-      
+
+        .up {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
     }
 </style>
 
@@ -235,17 +273,18 @@
                 </form>
             </div>
         </nav>
-        <h4 class="pl">Flipboard</h4>
+
 
         <div class="god">
             <div class="lol">
+                <h4 class="up">Flipboard</h4>
                 <b>
-                    <h1 style="font-weight: bolder; margin-top: 5%;">GET INFORMED</h1>
+                    <h1 style="font-weight: bolder; margin-top: 5%; font-size: 40px;">GET INFORMED</h1>
                 </b>
-                <h1 class="tal" style="font-weight: bolder;">GET INSPIRED</h1>
+                <h1 class="tal" style="font-weight: bolder; font-size: 40px;">GET INSPIRED</h1>
             </div>
 
-            <h4 style="margin-top: 2%;" class="store">Stories Curated For You</h4>
+            <h4 style="margin-top: 3%;" class="store">Stories Curated For You</h4>
             <button id="sam">Download
                 the app
             </button>
@@ -262,7 +301,7 @@
                 <li><a href="#">Sport</a></li>
                 <li><a href="#">Flipboard tv</a></li>
             </ul>
-        </div>  
+        </div>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4" id="first">
                 <div class="col">
@@ -273,7 +312,7 @@
                             <p class="card-title">1 day ago</p>
                             <h6 class="card-text">Colorado judge finds Trump engaged in insurrection, but rejects
                                 constitutional ballot challenge</h6>
-                                <p>bbc.co.uk - By Nick Beake</p>
+                            <p>bbc.co.uk - By Nick Beake</p>
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -286,14 +325,15 @@
                 <div class="col">
                     <div class="card h-100">
                         <img src="img/ax.png" style="width: 10%;">
-                        <img src="img/soilder.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <img src="img/soilder.webp" class="card-img-top" alt="..."
+                            style="width: 80%; margin-left: 10%;">
                         <div class="card-body">
                             <p class="card-title">
                                 15 hours ago</p>
                             <h6 class="card-text">
                                 Texas woman is convicted and faces up to life in prison for killing pro cyclist</h6>
-                                <p>ABC News - M.L. Nestel</p>
-                        </div>  
+                            <p>ABC News - M.L. Nestel</p>
+                        </div>
                         <div class="card-footer" id="gob">
                             <i class="fa-regular fa-heart"></i>32
                             <i class="fa-regular fa-comment-dots"></i>56
@@ -305,14 +345,15 @@
                 <div class="col">
                     <div class="card h-100">
                         <img src="img/npr.png" style="width: 9%;">
-                        <img src="img/donald trump.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <img src="img/donald trump.webp" class="card-img-top" alt="..."
+                            style="width: 80%; margin-left: 10%;">
                         <div class="card-body">
                             <p class="card-title">2 days ago</p>
                             <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in
                                 to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</h6>
-                                <p>USA TODAY - Marina Pitofsky</p>
+                            <p>USA TODAY - Marina Pitofsky</p>
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -335,7 +376,7 @@
                             <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in
                                 to
                                 additional content. This content is a little bit longer.</h6>
-                                <p>Axios - Andrew Freedman</p>
+                            <p>Axios - Andrew Freedman</p>
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -353,7 +394,7 @@
                             <h6 class="card-text">Sacha Baron Cohen, Debra Messing, Amy Schumer and other Jewish
                                 celebrities
                                 call out ‘the biggest antisemitic movement since the Nazis’ in</h6>
-                                <p>TIME - By Kathy Ehrich Dowd</p>
+                            <p>TIME - By Kathy Ehrich Dowd</p>
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -370,7 +411,7 @@
                             <p class="card-title"> 5 hours ago</p>
                             <h6 class="card-text">Hundreds leave Gaza's al-Shifa hospital as many feared killed at UN
                                 shelter</h6>
-                                <p>NPR - Juliana Kim</p>
+                            <p>NPR - Juliana Kim</p>
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -391,7 +432,7 @@
                         <div class="card-body">
                             <p class="card-title">7 hours ago</p>
                             <h6 class="card-text">Texas hiker found over a week after going missing</h6>
-                                <p>bbc.co.uk - By Michelle Roberts</p>
+                            <p>bbc.co.uk - By Michelle Roberts</p>
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -465,8 +506,8 @@
                             <p class="card-title"> 1 minute ago</p>
                             <h6 class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</h6>
-                                <p>forward.com - Lauren Markoe</p>
-                
+                            <p>forward.com - Lauren Markoe</p>
+
                         </div>
                         <div class="card-footer">
                             <i class="fa-regular fa-heart"></i>32
@@ -478,29 +519,31 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/thinkingman.webp" class="card-img-top" alt="..." style="width: 80%; margin-left: 10%;">
+                        <img src="img/thinkingman.webp" class="card-img-top" alt="..."
+                            style="width: 80%; margin-left: 10%;">
                         <div class="card-body">
                             <p class="card-title"> 15 days ago </p>
                             <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in
                                 to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</h6>
-                                <p>Axios - Zachary Basu</p>
+                            <p>Axios - Zachary Basu</p>
                         </div>
                         <div class="card-footer">
-                                <i class="fa-regular fa-heart"></i>32
+                            <i class="fa-regular fa-heart"></i>32
                             <i class="fa-regular fa-comment-dots"></i>56
                             <i class="fa-solid fa-plus"></i>24
-                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54                </div>
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>54
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <button class="rel" >Read more</button>
+        <button class="rel">Read more</button>
 
 
-         <div id="dad">
+        <div id="dad">
             <ul class="kol">
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Newsletter</a></li>
@@ -516,33 +559,21 @@
             <li class="flip"><a href="#"></a>@2023 Flipboard</li>
         </div>
 
-        <div>
-            <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-
-
-
-
-
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        <nav aria-label="Page navigation example" id="pag">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="uber.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="flipboard.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
