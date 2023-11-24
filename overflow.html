@@ -2,27 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
+<style>
+  #firm{
+    
+  }
+  #ted {
+    /* background-image: url(img/overflow.svg); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 100vh;
+    width: 42%;
+  }
+
+  #trf {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 250px;
+  }
+
+  .fir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  input {
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    height: 7vh;
+  }
+
+  button {
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    height: 7vh;
+    background-color;
+    border: none;
+  }
+
+  #gol {
+    margin-left: 30%;
+  }
+
+  #blu {
+    color: blue;
+  }
+
+  #ov {
+    display: none;
+  }
+  #doub{
+    width: 60px ;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+  }
+
+  @media screen and (max-width:768px) {
+    #ted {
+      display: none;
+    }
+    body{
+      overflow-x: hidden;
+    }
+
+    #ov {
+      display: block;
+      margin-top: 20%;
+      margin-left: 10%;
+    }
+
+    #trf {
+      width: 100% !important;
+      margin: 0px auto;
+      margin-top: 30%;
+      padding: 0px;
+    }
+
+    input {
+      width: 80%;
+      margin: 0px auto;
+    }
+    button{
+      width: 80%;
+      margin: 0px auto;
+    }
+    label{
+      margin-left: 10%;
+    }
+    #rf{
+      margin-left: 10%;
+    }
+    p{
+      font-size: 20px;
+    }
+    #gol{
+      margin: 0px auto;
+    }
+  }
+</style>
 
 <body>
-    <div class="container-fluid">
-        <div class="row" style="background-image: url(img/overflow.svg); background-repeat: no-repeat; height: 100%;">
-          <div class="col-md-6 ">
-          
-          </div>
-          <div class="col-md-6">
-            Column
-          </div>
-       
-        </div>
+  <h4 id="ov"><img src="img/over.png">overflow</h4>
+  <div id="firm">
+    <div class="fir">
+      <div id="ted">
+        <!-- <h4><img src="img/over.png">overflow</h4><br>
+        <h3>Communicate your<br> designs like never<br> before.</h3> -->
+        <img src="img/noted.png">
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <div id="trf">
+        <h1 id="rf">Forgot Password</h1>
+        <p id="rf">Please enter the email address you used to sign up and we’ll send you a password reset link</p>
+        <label for="type">Email</label>
+        <input type="text"><br>
+        <button>send</button>
+        <p id="gol">Back to <span id="blu">sign in</span> </p>
+      </div>
+
+    </div>
+    <img src="img/double.webp" style=" margin-left:  90%;" id="doub" >
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
