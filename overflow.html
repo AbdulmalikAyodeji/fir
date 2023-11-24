@@ -10,12 +10,7 @@
 
 </head>
 <style>
-  #firm{
-    
-  }
   #ted {
-    /* background-image: url(img/overflow.svg); */
-    /* background-repeat: no-repeat; */
     background-size: cover;
     height: 100vh;
     width: 42%;
@@ -45,7 +40,6 @@
     width: 100%;
     border-radius: 5px 5px 5px 5px;
     height: 7vh;
-    background-color;
     border: none;
   }
 
@@ -60,18 +54,23 @@
   #ov {
     display: none;
   }
-  #doub{
-    width: 60px ;
+
+  #doub {
+    width: 60px;
     position: fixed;
-    bottom: 30px;
+    bottom: 40px;
     right: 10px;
   }
+  #pag{
+      margin-left: 40%;
+    }
 
   @media screen and (max-width:768px) {
     #ted {
       display: none;
     }
-    body{
+
+    body {
       overflow-x: hidden;
     }
 
@@ -92,21 +91,29 @@
       width: 80%;
       margin: 0px auto;
     }
-    button{
+
+    button {
       width: 80%;
       margin: 0px auto;
     }
-    label{
+
+    label {
       margin-left: 10%;
     }
-    #rf{
+
+    #rf {
       margin-left: 10%;
     }
-    p{
+
+    p {
       font-size: 20px;
     }
-    #gol{
+
+    #gol {
       margin: 0px auto;
+    }
+    #pag{
+      margin-left: 10%;
     }
   }
 </style>
@@ -116,9 +123,7 @@
   <div id="firm">
     <div class="fir">
       <div id="ted">
-        <!-- <h4><img src="img/over.png">overflow</h4><br>
-        <h3>Communicate your<br> designs like never<br> before.</h3> -->
-        <img src="img/noted.png">
+        <img src="img/noted.png" style="height: 105%;">
       </div>
       <div id="trf">
         <h1 id="rf">Forgot Password</h1>
@@ -130,8 +135,19 @@
       </div>
 
     </div>
-    <img src="img/double.webp" style=" margin-left:  90%;" id="doub" >
-  </div>
+    <img src="img/double.webp" style=" margin-left:  90%;" id="doub">
+  </div><br><br>
+
+  <nav aria-label="Page navigation example" id="pag">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="uber.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="flipboard.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="overflow.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
